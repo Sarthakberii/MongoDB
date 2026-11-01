@@ -1,6 +1,6 @@
 # Cinema Buddy
 
-The project has two main folders: `frontend` for the website and `backend` for the API and machine-learning service. You can start the frontend and Node.js backend with `npm run dev` in their own terminals.
+The project has two main folders: `frontend` for the website and `backend` for the API and machine-learning service. You can start the frontend and Node.js backend with `npm run dev` in their own terminals. The ML service is started separately in `backend/ml-service`.
 
 ```text
 frontend/
@@ -19,7 +19,7 @@ Cinema_Buddy_Project_Report.docx
 
 ## Before you start
 
-Install Node.js 20 or newer, Python 3.10 or newer, and MongoDB. Start MongoDB on `localhost:27017`. The backend reads optional settings from `backend/.env`; copy `backend/.env.example` to that filename to change them.
+Install Node.js 20 or newer, Python 3.10 or newer, and MongoDB. Start MongoDB on `localhost:27017`. The backend reads optional settings from `backend/.env`; copy `backend/.env.example` to that file if needed.
 
 ## Run the application
 
@@ -72,7 +72,7 @@ Open the Vite URL shown in the terminal, usually `http://localhost:5173`.
 - Change the appearance using Auto, Day, or Night mode. Auto follows your device preference.
 - View the ML demand estimate in the booking panel.
 
-The chat helper uses built-in intent matching and does not need an external AI key. It can recommend a highly rated film, find a movie by title or genre, and guide booking and cancellation with reply-specific choices. The ML service uses synthetic training data for a demonstration; its estimates are not real cinema forecasts. If MongoDB is unavailable, the Node API temporarily keeps bookings in memory.
+The chat helper uses built-in intent matching and does not need an external AI key. It can recommend a highly rated film, find a movie by title or genre, and guide booking and cancellation with simple commands.
 
 ## Useful ML URLs
 
